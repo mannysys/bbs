@@ -1,0 +1,49 @@
+一 功能需求
+
+    增删改查（备份历史）
+
+    用户（注册/登录）
+
+    奖励机制
+
+    管理员功能（禁言/注销用户）
+
+二 技术/架构
+
+    CQRS + MVC 架构
+
+    mongoose - mongodb
+
+    node.js - express.js
+
+    react + flux
+
+    boostrap
+
+
+    模型
+
+
+   [ 基础层 + 核心领域业务层 + 应用层 ] <===> UI + 应用层
+
+基础层 mongoose
+核心业务层 cqrs
+应用层 express
+UI react + flux
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

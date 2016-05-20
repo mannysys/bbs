@@ -1,0 +1,108 @@
+
+json 数据（贫血的对象） 转换--> actor（富对象）
+
+1. actor 存储内存中，json 存储数据库中
+2. jsonp obj 只有getter/setter 贫血对象. actor 具有自身属性，并且具有自身[职责方法]的对象
+3. jsonp obj 存在于基础层，actor 存在于领域业务层
+4. 对 jsonp obj 的更改，是外在， actor 内部属性的更改，是自身控制的，外部只能调用业务方法，却不能直接更改 actor 属性
+5. jsonp obj 它是不完整的，并且是有人的因素，Actor 设计是不考虑人的因素
+6. actor 能够和需求概念一一对应
+
+
+值对象，不可变，可以替代（可直接更改的）
+
+id，实体对象
+
+聚合根：是一个特殊的实体对象
+1. id
+2. 不能绕开他，直接操作内部实体，
+actor.changeA('x');
+
+3. 聚合根直接引用内部实体对象
+
+class User{id}
+
+class Order{
+    constructor(){
+        this._userId;
+        this._hisory = new History();
+    }
+
+}
+
+4. 聚合根引用另外的，引用的是ID
+
+5. 内部实体对象，可以直接访问聚合根，对外部聚合根引用的是ID
+
+6. 聚合根和它内部的实体，只能通过ID，引用另外的聚合根的内部实体
+
+
+
+聚合根资源库
+Repository
+    .create
+    .remove
+    .find
+
+    .findOrderByDate(start,end,callback)
+
+
+CQRS 框架简单说就是读写分离
+
+write
+Repository
+    .create
+    .remove
+    .get(id) -> Actor
+
+read
+sql nosql
+
+1. 事件储存 -> save -> publish(eventbus)
+2. 回溯
+3. 聚合根Actor.change() -> 创建事件 -> 内部再更改自身属性 ->
+    => publish cqrs 内部组件 -> save -> open publish(eventbus)
+    subscribe 订阅
+4.
+
+var actor = new Actor();
+actor.loadSnap(data);  // 快照
+actor.loadEvents(events);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

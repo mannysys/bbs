@@ -1,0 +1,10 @@
+一、 开发核心层（业务领域层）
+1）创建文件夹lib -> core 创建聚合根Message.js/Reply.js/Topic.js/User.js
+2）安装cqrs框架
+npm install cqrs@1.0.1-pre --save
+
+
+
+
+
+
