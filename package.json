@@ -1,0 +1,26 @@
+{
+  "name": "bbs",
+  "version": "1.0.0",
+  "description": "Node.js / Express.js / React.js / FLUX / mongoosejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mannysys/bbs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mannysys/bbs/issues"
+  },
+  "homepage": "https://github.com/mannysys/bbs#readme",
+  "dependencies": {
+    "cqrs": "^1.0.1-pre"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.3.2"
+  }
+}

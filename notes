@@ -3,5 +3,19 @@
 2）安装cqrs框架
 npm install cqrs@1.0.1-pre --save
 
+3) 领域核心层开发
+Topic Actor 领域层聚合根对象
+4) 单元测试
+在项目根目录下创建test目录
+安装测试工具
+npm install mocha should --save-dev
 
-测试文件
+在test目录下新建test.Topic.js文件对功能进行测试
+看下package.json中的
+"scripts": {
+    "test": "mocha"
+  },
+
+然后执行 npm test
+
+
