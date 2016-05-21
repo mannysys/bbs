@@ -1,16 +1,16 @@
-Ò» ¹¦ÄÜÐèÇó
+ä¸€ åŠŸèƒ½éœ€æ±‚
 
-    ÔöÉ¾¸Ä²é£¨±¸·ÝÀúÊ·£©
+    å¢žåˆ æ”¹æŸ¥ï¼ˆå¤‡ä»½åŽ†å²ï¼‰
 
-    ÓÃ»§£¨×¢²á/µÇÂ¼£©
+    ç”¨æˆ·ï¼ˆæ³¨å†Œ/ç™»å½•ï¼‰
 
-    ½±Àø»úÖÆ
+    å¥–åŠ±æœºåˆ¶
 
-    ¹ÜÀíÔ±¹¦ÄÜ£¨½ûÑÔ/×¢ÏúÓÃ»§£©
+    ç®¡ç†å‘˜åŠŸèƒ½ï¼ˆç¦è¨€/æ³¨é”€ç”¨æˆ·ï¼‰
 
-¶þ ¼¼Êõ/¼Ü¹¹
+äºŒ æŠ€æœ¯/æž¶æž„
 
-    CQRS + MVC ¼Ü¹¹
+    CQRS + MVC æž¶æž„
 
     mongoose - mongodb
 
@@ -21,29 +21,13 @@
     boostrap
 
 
-    Ä£ÐÍ
+    æ¨¡åž‹
 
 
-   [ »ù´¡²ã + ºËÐÄÁìÓòÒµÎñ²ã + Ó¦ÓÃ²ã ] <===> UI + Ó¦ÓÃ²ã
+   [ åŸºç¡€å±‚ + æ ¸å¿ƒé¢†åŸŸä¸šåŠ¡å±‚ + åº”ç”¨å±‚ ] <===> UI + åº”ç”¨å±‚
 
-»ù´¡²ã mongoose
-ºËÐÄÒµÎñ²ã cqrs
-Ó¦ÓÃ²ã express
+åŸºç¡€å±‚ mongoose
+æ ¸å¿ƒä¸šåŠ¡å±‚ cqrs
+åº”ç”¨å±‚ express
 UI react + flux
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

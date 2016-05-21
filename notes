@@ -1,10 +1,7 @@
-Ò»¡¢ ¿ª·¢ºËĞÄ²ã£¨ÒµÎñÁìÓò²ã£©
-1£©´´½¨ÎÄ¼ş¼Ğlib -> core ´´½¨¾ÛºÏ¸ùMessage.js/Reply.js/Topic.js/User.js
-2£©°²×°cqrs¿ò¼Ü
+ä¸€ã€ å¼€å‘æ ¸å¿ƒå±‚ï¼ˆä¸šåŠ¡é¢†åŸŸå±‚ï¼‰
+1ï¼‰åˆ›å»ºæ–‡ä»¶å¤¹lib -> core åˆ›å»ºèšåˆæ ¹Message.js/Reply.js/Topic.js/User.js
+2ï¼‰å®‰è£…cqrsæ¡†æ¶
 npm install cqrs@1.0.1-pre --save
 
 
-
-
-
-
+æµ‹è¯•æ–‡ä»¶
