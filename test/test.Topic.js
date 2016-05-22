@@ -1,10 +1,12 @@
 /**
  * Created by shadow on 16/5/21.
  */
-
+'use strict';
 const Topic = require('../lib/core/Topic');
 const Domain = require('cqrs');
 const should = require('should');
+const validator = require('validator');
+
 
 describe('Topic', function(){
 
@@ -63,6 +65,26 @@ describe('Topic', function(){
         });
     });
 
+    it('#update', function(done){
+        //测试验证错误
+        domain.call(`Topic.${topicId}.update`,{title:'1',body:'is me'}).catch(err=>{
+
+            should.exist(err); //检查有错误
+            //再调用正确的测试
+            domain.call(`Topic.${topicId}.update`,{title:'okok',body:'is me'});
+            domain.get('Topic', topicId).then(function(json){
+                json.title.should.eql('okok');
+                json.body.should.eql('is me');
+                done();
+            });
+        });
+
+    });
+
+    //it('test', function(){
+    //    let result = validator.isLength('ooooo', {min: 5});
+    //    console.log(result);
+    //});
 
 });
 

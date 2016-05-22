@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/mannysys/bbs#readme",
   "dependencies": {
-    "cqrs": "^1.0.1-pre"
+    "cqrs": "^1.0.1-pre",
+    "validator": "^5.2.0"
   },
   "devDependencies": {
     "mocha": "^2.4.5",
