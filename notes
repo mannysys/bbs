@@ -19,3 +19,36 @@ npm install mocha should --save-dev
 然后执行 npm test
 
 
+
+
+
+
+
+首先我先创建的是Actor子类，如Topic然后将创建好的子类注册到一个domain中
+
+
+
+调用
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

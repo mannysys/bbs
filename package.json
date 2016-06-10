@@ -18,6 +18,7 @@
   "homepage": "https://github.com/mannysys/bbs#readme",
   "dependencies": {
     "cqrs": "^1.0.1-pre",
+    "tingodb": "^0.4.2",
     "validator": "^5.2.0"
   },
   "devDependencies": {
