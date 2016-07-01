@@ -12,7 +12,12 @@ const db = readerdb(emitter);
 describe('readerStore', function(){
     //清空数据
     it('#clear', function(){
-        require('fs').unlinkSync('./User');
+        try{
+            require('fs').unlinkSync('./User');
+        }catch(e){
+            console.log(e.stack);
+        }
+
     });
 
     it('#create', function(done){
@@ -22,6 +27,7 @@ describe('readerStore', function(){
         setTimeout(function(){
             //查询数据
             collection.find({id:'001'}).toArray(function(err, result){
+                console.log(result);
                 result[0].name.should.eql('leo');
                 done();
             });

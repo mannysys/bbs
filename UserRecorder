@@ -1,0 +1,6 @@
+{"k":"0000000078","o":"0000000097","v":"001"}
+{"_id":2,"_uid":2,"_dt":1467342107548,"_s":"2bb88a27ecaddb8c35b8cd0118c46bf9"}
+{"id":"recorderid","loginname_map":{},"email_map":{},"isAlive":true,"_id":{"$wrap":"$oid","v":2}}
+{"k":"0000000078","o":"0000000207","v":"001"}
+{"_id":2,"_uid":2,"_dt":1467342107819,"_s":"a47e4fe0fd8773b0148dac9158be94e5"}
+{"id":"265e6de0-3f38-11e6-be3d-e9ff7053d1b9","loginname_map":{},"email_map":{},"isAlive":true,"_id":{"$wrap":"$oid","v":2},"loginname":"leo","password":"1234567","num":0,"nickname":"leo","email":"11@qq.com"}

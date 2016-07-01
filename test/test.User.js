@@ -20,13 +20,13 @@ describe('User', function(){
     it('#create', done=>{
         domain.create('User',{
             loginname:'leo',
-            password:'123'
+            password:'1234567'
         }).then(function(json){
             userId = json.id;
 
             json.loginname.should.eql('leo'); //判断
             json.nickname.should.eql('leo');
-            json.password.should.eql('123');
+            json.password.should.eql('1234567');
 
             done();
         });
@@ -35,9 +35,8 @@ describe('User', function(){
     it('#create2', done=>{
         domain.create('User',{
             loginname:'leo',
-            password:'123'
+            password:'1234567'
         }).then(function(json){
-
         }).catch(function(err){
             done();
         });

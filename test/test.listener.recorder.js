@@ -20,7 +20,7 @@ describe('recorder', function(){
     it('#recorder', function(done){
         domain.create('User',{
             loginname:'leo',
-            password:'123'});
+            password:'1234567'});
 
         setTimeout(function(){
            domain.get('UserRecorder','recorderid').then(function(recorder){

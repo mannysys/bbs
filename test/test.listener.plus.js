@@ -25,7 +25,7 @@ describe('plus', function(){
             //添加一个用户并得到id
             return domain.create('User',{
                 loginname:'leo',
-                password:'123'
+                password:'1234567'
             });
 
         })
