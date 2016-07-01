@@ -8,10 +8,8 @@ const should = require('should');
 describe('getNickname', function(){
 
     it('#test', function(){
-        let str = 'hello world and @ÔøÁÁ @leo and @ook ';
+        let str = 'hello world and @æ›¾äº® @leo and @ook ';
         let result = getNickname(str);
-        console.log(result);
         result.length.should.eql(3);
-
     });
 });
